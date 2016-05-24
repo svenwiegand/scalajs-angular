@@ -11,6 +11,10 @@ import scala.scalajs.js
 trait ThemingProvider extends js.Object {
 
   def theme(name: String): Theme = js.native
+
+  def setDefaultTheme(name: String): Unit = js.native
+
+  def alwaysWatchTheme(watch: Boolean): Unit = js.native
 }
 
 @js.native
